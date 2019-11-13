@@ -1,0 +1,13 @@
+<h1>Welcome to your Restaurant Yelp</h1>
+<% @restaurants.each do |restaurant| %>
+  <li>
+  <%= restaurant.name %>
+  <%= restaurant.address %>
+  <%= restaurant.category %>
+<!--   <td><%= restaurant.reviews %></td> -->
+  <%= link_to 'Show Details', restaurant_path(restaurant) %>
+  <%= link_to 'New', new_restaurant_path(restaurant) %>
+  </li>
+<% end %>
+
+
