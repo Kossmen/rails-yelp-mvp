@@ -5,9 +5,13 @@
   <%= restaurant.address %>
   <%= restaurant.category %>
 <!--   <td><%= restaurant.reviews %></td> -->
-  <%= link_to 'Show Details', restaurant_path(restaurant) %>
-  <%= link_to 'New', new_restaurant_path(restaurant) %>
   </li>
+  <%= link_to 'Show Details', restaurant_path(restaurant) %>
 <% end %>
+<br>
+<br>
+<br>
+
+<%= link_to 'New', new_restaurant_path, class: "btn btn-primary" %>
 
 
